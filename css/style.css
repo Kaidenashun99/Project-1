@@ -1,0 +1,382 @@
+/** Fonts **/
+
+@font-face{
+    font-family: stencil;
+    src: url(stencil.ttf);
+}
+
+/**Core Elements and Classes **/
+
+.content { /**puts everything into the center of the page**/
+    max-width: 1100px;
+    margin: auto;
+}
+
+body{ /**Fixes trapped body behind navbar**/
+    padding-top: 50px;
+    background-color:black;
+}
+.centerAlign{/**Centers text **/
+    text-align: center;
+}
+
+.textPadding{
+    padding:20px 120px 75px 120px;
+}
+
+.sectionHeader{/**House-style for the headers**/
+    background-color:Darkgreen;
+    font-family:'Bree Serif', serif;
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/**Navbar**/
+
+#navLogo{
+    height:60px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.navbar-left>img{
+    height:20px;
+}
+.navText{
+    color:white;
+    font-family: stencil, sans-serif; 
+    font-size:20px;
+}
+.navText:hover{
+    color:darkgreen;
+    font-family: stencil, sans-serif;
+    font-size:20px;
+}
+@media (min-width: 480px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+/*Fixes 2 row navbar when the viewport is medium*/
+@media (max-width: 990px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+/**End of Navbar**/
+
+
+
+/** Home Jumbotron**/
+
+#jumbotron1 {
+    margin-bottom: 0px;
+    background-image: url(lake.jpg);
+    background-position: 0% 25%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+/** End of Home Jumbotron**/
+
+
+
+/*News Section*/
+.newsCardImgs{
+    height:150px;
+    width:150px;
+}
+#newsFish{/*Sizing of fish photo in news header*/
+    height:63px;
+}
+    
+/*Footer Section*/
+.pageFooter{
+      margin-bottom: 0px;  
+    }
+
+
+
+
+/** Start of Gallery Page**//
+#gallHeader{ /*Gallery header banner */
+    padding-top:10px;
+    
+}
+
+.gallSideSection{
+    /**Formatting for the fish of the week side section**/
+    background-color:darkgreen;
+    height:388px;
+    
+}
+.fishOfWeekText{
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    font-family: 'Bree Serif', serif;
+    
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+/**Modal for gallery**/
+/* Style the Image Used to Trigger the Modal */
+.galleryImage{
+    padding: 10px;
+}
+
+/*Tackle Reviews*/
+
+/*Jumbotron*/
+@media screen and (min-width:800px){
+.tackleJumbo{
+
+    margin-bottom: 0px;
+    background-image:url(tackleReviews.jpg);
+    height:300px;
+    
+}
+}
+.expertsPanel{
+    background-color:grey;
+}
+.expertImages{
+    padding-top:20px;
+
+}
+
+/*Tackle review headers product/name*/
+    }
+.reviewHeader{
+    background-color: #222;
+     border-color: #080808;
+    border-width: thin;
+    height:75px;
+    
+}
+.reviewHeaderText{
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+/*Tackle review text under header*/
+.reviewText{
+  font-family:"Bree Serif", serif;
+    font-size:18px;
+    color:white;
+    padding-top:20px;
+    
+}
+.reviewTextBackground{
+        background-color:grey;
+    }
+
+/*Contact Us Page Start*/
+.socialContact{
+    background-color:white;
+    height:400px;
+}
+
+.contactJumbo{
+    background-image: url(contactJumbo.jpg);
+    height:200px;
+}
+/*Fixes missing top of Jumbo*/
+.contactBody{
+    padding-top:63px;
+}
+
+
+/*Contact Us Page*/
+
+/**Get in touch text**/
+#h2Js{
+    display:none;
+}
+
+
+
+
+
+
+/**Social Media**/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: white;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+    background-color:black;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+/**Contact FORM**/
+.form-control{
+    width:auto;
+}
+.msgBox{
+    height:200px;
+    
+}
+
+    
